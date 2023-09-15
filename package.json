@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "web": "vite",
-    "server": "env YTDL_NO_UPDATE=1 node --watch --no-warnings api/index.js",
+    "web:dev": "vite",
+    "server:dev": "env YTDL_NO_UPDATE=1 node --watch --no-warnings api/index.js",
+    "server:start": "env YTDL_NO_UPDATE=1 node api/index.js",
     "build": "vite build",
     "preview": "vite preview"
   },
